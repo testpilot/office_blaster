@@ -36,5 +36,7 @@ gem 'thinking-sphinx'
 gem 'rails-backbone', :git => 'git://railscamp.github.com/ivan/backbone-rails.git'
 gem 'handlebars_assets'
 
-
+group :test, :development do
+  gem 'rspec-rails', '2.8'
+end
 
