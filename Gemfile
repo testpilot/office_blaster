@@ -29,14 +29,34 @@ gem 'compass', '0.12.alpha.4'
 gem 'bootstrap-sass', :git => 'git://railscamp.github.com/ivan/bootstrap-sass.git'
 gem 'jquery-rails'
 gem 'haml'
-gem 'djjour', :git => 'git://railscamp.github.com/pat/djjour.git'
+gem 'djjour',         :path => File.expand_path('~/dev/ruby/djjour')
 gem 'rest-client'
 gem 'hashie'
 gem 'thinking-sphinx'
 gem 'rails-backbone', :git => 'git://railscamp.github.com/ivan/backbone-rails.git'
 gem 'handlebars_assets'
+gem 'god'
+gem 'thor'
+gem 'devise'
+gem 'resque'
+gem 'resque-meta'
+gem 'hashr'
 
 group :test, :development do
   gem 'rspec-rails', '2.8'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver', '~> 2.15.0'
+  gem 'fabrication'
+  gem 'rake',               '~> 0.9.2'
+  gem 'cucumber-rails',     '~> 1.0.2'
+  gem 'awesome_print'
+  gem 'faker'
+  gem 'fakeweb'
+  gem 'guard-rspec'
 end
 
